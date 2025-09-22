@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//macOS 15.6.1//EN
+N:Rehfeld;Martin;;;
+FN:Martin Rehfeld
+ORG:Technology Consulting & Development;
+EMAIL;type=INTERNET;type=pref:martin@rehfeld-consulting.de
+TEL;type=CELL;type=VOICE;type=pref:+49 151 685 448 32
+ADR;type=pref:;;Kameruner Weg 18;Paulinenaue;;14641;
+item1.URL;type=pref:https://www.rehfeld-consulting.de
+END:VCARD

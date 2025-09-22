@@ -7,7 +7,7 @@ permalink: /home.html
     <div class="hero-content">
         <div class="portrait">
             <img
-                src="https://profile-images.xing.com/images/3a59449f381753eaec4f8ecee0dbbcc0-3/martin-rehfeld.256x256.jpg"
+                src="{{ "/assets/img/martin-rehfeld.256x256.jpg?v=" | append: site.github.build_revision | relative_url }}"
                 alt="Portrait von Martin Rehfeld"
             />
         </div>
@@ -49,23 +49,23 @@ permalink: /home.html
     <h2>Kontakt</h2>
     <p>
         E-Mail:
-        <a href="mailto:martin@rehfeld-consulting.de">
-            martin@rehfeld-consulting.de
+        <a href="mailto:{{ site.email }}">
+            {{ site.email | escape_once }}
         </a>
-    </p>
-    <p>
+        <br>
         Telefon:
-        <a href="tel:+4915168544832">+49 (0)151 685 448 32</a>
-    </p>
-    <p>
+        <a href="tel:{{ site.telephone | remove: "(0)" | remove: " " }}">{{ site.telephone | escape_once }}</a>
+        <br>
         Web:
-        <a href="https://rehfeld-consulting.de">
-            rehfeld-consulting.de
+        <a href="{{ site.url | absolute_url }}" rel="canonical">
+            {{ site.url | absolute_url | remove: "https://" | remove: "http://" }}
         </a>
     </p>
     <p>
         <a
-            href="data:text/vcard;charset=utf-8,BEGIN%3AVCARD%0AVERSION%3A3.0%0AN%3ARehfeld%3BMartin%0AFN%3AMartin%20Rehfeld%0ATITLE%3ATechnology%20Consulting%20%26%20Development%0AORG%3ARehfeld%20Consulting%0AURL%3Ahttps%3A%2F%2Frehfeld-consulting.de%0AEMAIL%3Amartin%40rehfeld-consulting.de%0ATEL%3BWORK%3A%2B49%2015168544832%0AADR%3BWORK%3A%3B%3B%3B%3B%3B%3B%0AEND%3AVCARD"
+            href="{{ "/assets/vcf/martin-rehfeld.vcf?v=" | append: site.github.build_revision | relative_url }}"
+            type="text/vcard;charset=UTF-8"
+            rel="alternate me"
             download="martin-rehfeld.vcf"
         >
             vCard herunterladen

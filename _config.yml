@@ -14,7 +14,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Martin Rehfeld — Technology Consulting & Development
+subtitle: Technology Consulting & Development
 email: martin@rehfeld-consulting.de
+telephone: +49 (0) 151 685 448 32
 description: >- # this means to ignore newlines until "baseurl:"
   Martin Rehfeld — Technology Consulting & Development. Cloud-Architektur, Prototyping, Individualsoftware, IT-Organisation für Enterprise-Kunden.
 baseurl: "" # the subpath of your site, e.g. /blog
