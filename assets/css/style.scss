@@ -89,7 +89,7 @@ header p {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=80")
+    background: url("{{ "/assets/img/hero-background.jpeg?v=" | append: site.github.build_revision | relative_url }}")
         center/cover no-repeat;
     opacity: 0.25;
     z-index: 0;
