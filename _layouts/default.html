@@ -22,11 +22,11 @@
         </header>
 
         <main>
-            {{ content }}
+{{ content }}
         </main>
 
         <footer>
-            &copy; 2025 {{ site.title | escape_once }}
+            &copy; {{ 'now' | date: "%Y" }} {{ site.title | escape_once }}
             //
             <a href="impressum.html">Impressum</a>,
             <a href="datenschutz.html" rel="privacy-policy">Datenschutzerklärung</a>
