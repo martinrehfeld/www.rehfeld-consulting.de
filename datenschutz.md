@@ -3,6 +3,7 @@ layout: default
 title: Datenschutzerklärung
 contact_form: false
 google_maps: false
+sitemap: false
 ---
 
 # {{ page.title | escape_once }}

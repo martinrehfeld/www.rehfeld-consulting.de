@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Impressum
+sitemap: false
 ---
 
 # {{ page.title | escape_once }}

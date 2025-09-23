@@ -26,7 +26,9 @@ github_username:  martinrehfeld
 
 # Build settings
 markdown: kramdown
-theme: minima
+strict_front_matter: true
+plugins:
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -34,6 +36,9 @@ theme: minima
 exclude:
   - Gemfile
   - Gemfile.lock
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
   - node_modules
   - vendor/bundle/
   - vendor/cache/
