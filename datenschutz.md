@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Datenschutzerklärung
+contact_form: false
+google_maps: false
 ---
 
 # {{ page.title | escape_once }}
@@ -126,7 +128,7 @@ Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenomm
 
 Die Erfassung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Der Websitebetreiber hat ein berechtigtes Interesse an der technisch fehlerfreien Darstellung und der Optimierung seiner Website – hierzu müssen die Server-Log-Files erfasst werden.
 
-{% comment %}
+{% if page.contact_form %}
 ### Kontaktformular
 
 Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
@@ -134,7 +136,7 @@ Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben a
 Die Verarbeitung der in das Kontaktformular eingegebenen Daten erfolgt somit ausschließlich auf Grundlage Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Sie können diese Einwilligung jederzeit widerrufen. Dazu reicht eine formlose Mitteilung per E-Mail an uns. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitungsvorgänge bleibt vom Widerruf unberührt.
 
 Die von Ihnen im Kontaktformular eingegebenen Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z.B. nach abgeschlossener Bearbeitung Ihrer Anfrage). Zwingende gesetzliche Bestimmungen – insbesondere Aufbewahrungsfristen – bleiben unberührt.
-{% endcomment %}
+{% endif %}
 
 ### Anfrage per E-Mail, Telefon oder Telefax
 
@@ -150,7 +152,7 @@ Wir erheben, verarbeiten und nutzen personenbezogene Daten nur, soweit sie für 
 
 Die erhobenen Kundendaten werden nach Abschluss des Auftrags oder Beendigung der Geschäftsbeziehung gelöscht. Gesetzliche Aufbewahrungsfristen bleiben unberührt.
 
-{% comment %} 
+{% if page.google_maps %}
 ## 4. Plugins und Tools
 
 ### Google Maps
@@ -162,6 +164,6 @@ Zur Nutzung der Funktionen von Google Maps ist es notwendig, Ihre IP Adresse zu 
 Die Nutzung von Google Maps erfolgt im Interesse einer ansprechenden Darstellung unserer Online-Angebote und an einer leichten Auffindbarkeit der von uns auf der Website angegebenen Orte. Dies stellt ein berechtigtes Interesse im Sinne von Art. 6 Abs. 1 lit. f DSGVO dar.
 
 Mehr Informationen zum Umgang mit Nutzerdaten finden Sie in der Datenschutzerklärung von Google: [https://policies.google.com/privacy?hl=de](https://policies.google.com/privacy?hl=de).
-{% endcomment %}
+{% endif %}
 
 ![eRecht24 - Datenschutzerklärung für rechtssichere Webseiten]({{ "/assets/img/erecht_datenschutz.png?v=" | append: site.github.build_revision | relative_url }})
