@@ -2,14 +2,16 @@
 <html lang="de">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
         <title>{{ site.title | escape_once }}</title>
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
         <meta
             name="description"
             content="{{ site.title }}. Cloud-Architektur, Prototyping, Individualsoftware, IT-Organisation für Enterprise-Kunden."
         />
-        <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}" />
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <style>
+{% include style.css -%}
+        </style>
     </head>
     <body>
         <header>
@@ -23,7 +25,7 @@
         </header>
 
         <main>
-{{ content }}
+{{ content -}}
         </main>
 
         <footer>
