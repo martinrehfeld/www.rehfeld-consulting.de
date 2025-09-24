@@ -21,6 +21,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Martin Rehfeld — Technology Consulting & Development. Cloud-Architektur, Prototyping, Individualsoftware, IT-Organisation für Enterprise-Kunden.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.rehfeld-consulting.de" # the base hostname & protocol for your site, e.g. http://example.com
+source_url: "https://github.com/martinrehfeld/www.rehfeld-consulting.de" # the URL to the source code repository for this site
 twitter_username: klickmich
 github_username:  martinrehfeld
 
