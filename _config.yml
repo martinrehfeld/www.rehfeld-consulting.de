@@ -15,6 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Martin Rehfeld — Technology Consulting & Development
 subtitle: Technology Consulting & Development
+short_title: Rehfeld Consulting
 email: martin@rehfeld-consulting.de
 telephone: +49 (0) 151 685 448 32
 description: >- # this means to ignore newlines until "baseurl:"
