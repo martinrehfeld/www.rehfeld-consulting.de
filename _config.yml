@@ -28,6 +28,7 @@ github_username:  martinrehfeld
 
 # Build settings
 safe: true # enforced by GitHub Pages - making it explicit here
+theme: null
 markdown: kramdown
 strict_front_matter: true
 plugins:
