@@ -50,15 +50,17 @@ sitemap: false
     <h2>Kontakt</h2>
     <p>
         E-Mail:
-        <a href="mailto:{{ site.email }}">
+        <a href="mailto:{{ site.email }}" class="contact-link">
             {{ site.email | escape_once }}
         </a>
         <br>
         Telefon:
-        <a href="tel:{{ site.telephone | remove: "(0)" | remove: " " }}">{{ site.telephone | escape_once }}</a>
+        <a href="tel:{{ site.telephone | remove: "(0)" | remove: " " }}" class="contact-link">
+            {{ site.telephone | escape_once }}
+        </a>
         <br>
         Web:
-        <a href="{{ site.url | absolute_url }}" rel="canonical">
+        <a href="{{ site.url | absolute_url }}" rel="canonical" class="contact-link">
             {{ site.url | absolute_url | remove: "https://" | remove: "http://" }}
         </a>
     </p>
@@ -68,6 +70,7 @@ sitemap: false
             type="text/vcard;charset=UTF-8"
             rel="alternate me"
             download="martin-rehfeld.vcf"
+            class="contact-link"
         >
             vCard herunterladen
         </a>

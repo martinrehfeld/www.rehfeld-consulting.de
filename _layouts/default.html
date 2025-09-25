@@ -32,15 +32,17 @@
             </a>
         </header>
 
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ main page content ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 <main>
 {{ content -}}
 </main>
+<!-- ~~~~~~~~~~~~~~~~~~~~~~ end of main page content ~~~~~~~~~~~~~~~~~~~~~~~ -->
 
         <footer>
             &copy; {{ 'now' | date: "%Y" }} {{ site.title | escape_once }}
             //
-            <a href="impressum.html">Impressum</a>,
-            <a href="datenschutz.html" rel="privacy-policy">Datenschutzerklärung</a>
+            <a href="impressum.html" class="footer-link">Impressum</a>,
+            <a href="datenschutz.html" rel="privacy-policy" class="footer-link">Datenschutzerklärung</a>
         </footer>
     </body>
 </html>
